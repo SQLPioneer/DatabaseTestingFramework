@@ -1,2 +1,8 @@
-# DatabaseTestingFramework
-Database testing framework written in PowerShell using Pester. This is intended to be used with T-SQL-T or standalone depending on the needs of the user. 
+## DBTestFramework
+
+Framework used to test database functionality.
+
+Authored by Adam Anderson
+
+Framework used to test databases as they move through different phases of development from unit tests though to production deploy tests.
+
