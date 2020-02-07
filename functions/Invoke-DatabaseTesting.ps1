@@ -37,7 +37,7 @@ function Invoke-DatabaseTesting {
         [Parameter(Mandatory=$false)] [string]$Filter = "*.sql"
       )
     
-      if (!$Credential) {"Credential is null"}
+      if (!$Credential) {Write-Output   "Credential is null"}
       Describe "Running SQL Tests on $Server for database $Database" {
         Context "$TestDirectory" {
           foreach ($file in Get-ChildItem -path $TestDirectory -Filter $Filter | Sort-Object) {
